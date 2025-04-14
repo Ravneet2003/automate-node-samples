@@ -23,6 +23,10 @@ steps:
     browserstackLocal: true
     bsLocalOptions: '{"localIdentifier": "azuretestinglocalbinary"}'
 
+- task: BrowserStackStopLocal@0
+  inputs:
+    localIdentifier: 'azuretestinglocalbinary'
+
 - script: |
     npm install
     node single.js

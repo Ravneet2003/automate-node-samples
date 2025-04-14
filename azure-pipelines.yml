@@ -21,7 +21,7 @@ steps:
   inputs:
     BrowserStackServiceEndPoint: 'Test'
     browserstackLocal: true
-    bsLocalOptions: '{''localIdentifier'': ''azuretestinglocalbinary''}'
+    bsLocalOptions: '{"localIdentifier": "azuretestinglocalbinary"}'
 
 - script: |
     npm install

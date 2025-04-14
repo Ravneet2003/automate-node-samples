@@ -27,7 +27,7 @@ let driver = new Builder()
 	.usingServer(`http://${BROWSERSTACK_USERNAME}:${BROWSERSTACK_ACCESS_KEY}@hub-cloud.browserstack.com/wd/hub`)
 	.build();
 
-driver.get('http://www.bstackdemo.com/').then() => {	
+driver.get('http://www.bstackdemo.com/').then(() => {	
 	driver.quit();
-};
+});
 
